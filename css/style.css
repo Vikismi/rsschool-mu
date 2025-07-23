@@ -37,17 +37,14 @@
 
 body{
   background-color:#ffff;
-  background-attachment: fixed;
-  max-width: 1920px;
-  min-width: 420px;
-  /* текст */
-  font-family: "TTChocolates", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.2em;
   color: #555;
   line-height: 1.5;
   overflow-x: hidden; 
-  display: block;
+  max-width: 1440px;
+
 }
 p{
   margin: auto;
@@ -57,9 +54,7 @@ p{
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
-.no-scroll {
 
-}
 hr{
 width: 1440px;
 border: 3px solid #710707;
@@ -77,27 +72,27 @@ padding: 0;
   justify-content: space-between;
   align-items: center;
   background-color:#030303;
-
-margin-left: 240px;
+  padding-top: 59px;
+  padding-bottom: 62px;
+  margin: 0 auto;
 }
 .logo{
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  width: 199px;
-  height: 33px;
-  margin-bottom: auto;
-  
+display: flex;
+position: relative;
+justify-content: space-between;
+width: 199px;
+height: 33px;
+margin-bottom: auto;
 }
 .logo-img2{
-  display: flex;
-  align-items: left;
-  width: 49px;
-  height:26px;
-  transition: 1s;
+display: flex;
+align-items: left;
+width: 49px;
+height:26px;
+transition: 1s;
 }
 .logo-img2:hover{
-  transform: scale(1.2); /* Увеличиваем масштаб */
+transform: scale(1.2);
 }
 .logo-text a{
 text-decoration: none;
@@ -105,14 +100,11 @@ color: #fff;
 font-family: Forum;
 font-weight: 400;
 font-size: 28px;
-leading-trim: NONE;
 line-height: 100%;
 letter-spacing: 5px;
 text-transform: uppercase;
 margin-left: 44px;
-
 }
-
 /*----------------------nav---------------------*/
 .nav {
   display: flex;
@@ -121,47 +113,47 @@ margin-left: 44px;
   flex-direction: row;
   gap: 8px;
   padding-left: 8px;  
-  margin-left: 665px;
+  margin-left: 365px;
 }
 .nav-list {
   display: flex;
   align-items: center;
   list-style: none;
-  justify-content: center;  
+  justify-content: center;
+  transition: 0.3s;  
 }
 .nav-link {
   padding: 0 15px;
   text-decoration: none;
   color: #fff;
+  letter-spacing: 5px;
+  font-weight: 100;
   position: relative;
-  font-size: 14px;
+  font-size: 22px;
+  transition: color  0.3s;
 }
 .nav-link:hover { 
   color:  #9D8665;
-  font-size: 1em;
-  transition: 0.3s;
 }
 .nav-item{
-font-family: Roboto;
-font-weight: 200;
-font-size: 22px;
-leading-trim: NONE;
-line-height: 100%;
-letter-spacing: 2px;
-color: #FFFFFF;
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  color: #FFFFFF;
 }
 /* -----------Main-------------------------*/
 .main{
   width: 100%;
   max-width: 1440px;
   background-color:#ffff;
-  margin-left: 240px;
+ 
 }
 /* -----------Welkom-------------------------*/
 .bg{
 background-color:#030303;
 width: 100%;
-max-width: 1920px;
 height: 842px;
 opacity: 1;
 margin:0;
@@ -190,8 +182,7 @@ text-align: left;
 opacity: 1;
 font-family: Forum;
 font-weight: 400;
-font-size: 60px;
-leading-trim: NONE;
+font-size: 80px;
 line-height: 100%;
 letter-spacing: 5%;
 text-transform: uppercase;
@@ -202,39 +193,37 @@ background-color:#83d284
 font-family: Roboto;
 font-weight: 300;
 font-size: 28px;
-leading-trim: NONE;
 line-height: 100%;
 letter-spacing: 2px;
 color: #fff;
 margin-top: 55px;
 }
 .btn2{
-  width: 360px;
-  height: 75px;
-  margin-top: 100px;
-  padding: 0.8em 0.4em;
-  background: #710707;
-  border-radius: 10px;
-  text-align: center;
-  font-family: 40px;
-  color: #fff;
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 22px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 2px;
-  text-align: center;
-  vertical-align: middle;
-  transition: background 0.2 linear;
+width: 360px;
+height: 75px;
+margin-top: 100px;
+padding: 0.8em 0.4em;
+background: #710707;
+border-radius: 10px;
+text-align: center;
+font-family: 40px;
+color: #fff;
+font-family: Roboto;
+font-weight: 300;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 2px;
+text-align: center;
+vertical-align: middle;
+transition: background 0.2 linear;
 }
 .btn2:hover{
-  background: #9D8665;
-  text-align: center;
-  cursor:pointer;
+background: #9D8665;
+text-align: center;
+cursor:pointer;
 }
 .btn2:active{
-  background:#b9cbb9;
+ background:#b9cbb9;
 }
 .btn2-xl{
   font-size: 2rem;
@@ -317,7 +306,7 @@ background-color:#030303;
 .content-tour-bg{
 background: #FFFFFF;
 width: 100%;
-max-width: 1920px;
+
 opacity: 1;
 margin:0
 }
@@ -343,10 +332,11 @@ white-space: nowrap;
   display: grid;
   grid-template-columns: repeat(3,410px);
   grid-template-rows: auto auto;
-   gap: 70px;/* растояние между */
+  gap: 70px;/* растояние между */
   background-color:#fff;
   justify-content: space-around;
   padding-left: 0;
+  margin: 0 auto;
 
 }
 .cart-tour{
@@ -881,12 +871,15 @@ z-index: 2;
 }
 .nav-footer{
   display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  flex-direction: row;
-  gap: 8px;
-  padding-left: 8px;
-  margin-left: 665px; 
+  gap: 150px;
+  margin-left: 145px;
+  flex-grow: 1;
+  margin-bottom: 50px;
+}
+.nav-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .nav-list-footer{
  display: flex;
